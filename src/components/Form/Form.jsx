@@ -1,24 +1,14 @@
-import {
-	Button,
-	FormControl,
-	FormControlLabel,
-	FormLabel,
-	InputAdornment,
-	Radio,
-	RadioGroup,
-	TextField,
-	FormHelperText
-} from '@material-ui/core'
+import { Button, FormControl, FormControlLabel, FormHelperText, FormLabel, InputAdornment, Radio, RadioGroup, TextField } from '@material-ui/core'
 import AccountBoxIcon from '@material-ui/icons/AccountBox'
 import AddIcon from '@material-ui/icons/Add'
 import ContactPhoneIcon from '@material-ui/icons/ContactPhone'
 import DateRangeIcon from '@material-ui/icons/DateRange'
 import React from 'react'
+import { connect } from 'react-redux'
+import { addNew } from '../../store/actionCreators'
 import { FlexBlock } from '../styled'
 import useForm from './helpers/useForm'
 import validation from './helpers/validation'
-import { addNew } from '../../store/actionCreators'
-import { connect } from 'react-redux'
 
 const defaultForm = {
 	firstName: '',

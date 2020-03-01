@@ -17,6 +17,9 @@ const HeadItem = styled(FlexBlock)`
 	:not(:last-child) {
 		border-right: 1px solid #e1e1e1;
 	}
+	:hover {
+		background-color: slateblue;
+	}
 `
 const HeadRow = styled(FlexBlock)`
 	height: 45px;

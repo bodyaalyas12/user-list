@@ -1,2 +1,3 @@
 Hello.Technology stack : react/redux/styled/materialUI/react-spring/...
 View deployed version <a href="https://bodyaalyas12.github.io/user-list/">Here</a>
+With this application you can add new users(people) by clicking related button.After that you can sort the list by each field and delete any item.

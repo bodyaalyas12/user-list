@@ -1,5 +1,4 @@
 import React from 'react'
-import { FlexBlock } from './components/styled'
 import UserList from './components/UserList'
 import Form from './components/Form'
 

@@ -1,4 +1,4 @@
-const phoneValidation = value => {
+const phone = value => {
 	if (value && !value.match(/^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/g)) {
 		return 'phone number is incorrect.'
 	}
@@ -14,7 +14,7 @@ const phoneValidation = value => {
 	return ''
 }
 
-const firstNameValidation = value => {
+const firstName = value => {
 	if (!value.length) {
 		return 'first name is required'
 	}
@@ -27,7 +27,7 @@ const firstNameValidation = value => {
 	return ''
 }
 
-const lastNameValidation = value => {
+const lastName = value => {
 	if (!value.length) {
 		return 'last name is required'
 	}
@@ -39,7 +39,7 @@ const lastNameValidation = value => {
 	}
 	return ''
 }
-const ageValidation = value => {
+const age = value => {
 	if (!value.length) {
 		return 'age is required'
 	}
@@ -49,7 +49,7 @@ const ageValidation = value => {
 	return ''
 }
 
-const genderValidation = value => {
+const gender = value => {
 	if (!value) {
 		return 'gender field is required'
 	}
@@ -57,9 +57,9 @@ const genderValidation = value => {
 }
 
 export default {
-	firstNameValidation,
-	lastNameValidation,
-	phoneValidation,
-	ageValidation,
-	genderValidation
+	firstName,
+	lastName,
+	phone,
+	age,
+	gender
 }
